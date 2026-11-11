@@ -1,0 +1,18 @@
+RESUMEN DEL PROCESAMIENTO
+
+URL de origen del CSV: https://huggingface.co/datasets/KaungHtetCho/MT-myanmar-english/resolve/main/test_data.csv
+Archivo CSV importado: datos/productos_hf.csv
+Modificación realizada en CSV: Fila 1: se actualizó la columna English.
+Nuevo CSV guardado: datos/productos_modificados.csv
+Registros CSV procesados: 137
+
+URL de origen del JSON: https://huggingface.co/datasets/huggingface-projects/color-palettes-sd/resolve/main/data.json
+Archivo JSON importado: datos/productos_hf.json
+Modificación realizada en JSON: Registro 1: se agregó el campo revisado con valor True.
+Nuevo JSON guardado: datos/productos_modificados.json
+Registros JSON procesados: 2714
+
+Clases y métodos utilizados:
+- ManejadorCSV: importar, modificar_valor y guardar.
+- ManejadorJSON: importar, modificar_valor y guardar.
+- GeneradorResumenTXT: generar.

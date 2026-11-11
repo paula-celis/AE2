@@ -1,0 +1,33 @@
+# AE2: manejo de archivos CSV, JSON y TXT
+
+## Descripción
+
+El notebook coordina tres clases de Python: una importa, modifica y guarda CSV; otra hace lo mismo con JSON; y una tercera genera `resumen.txt`.
+
+## Archivos
+
+- `manejador_csv.py`: clase `ManejadorCSV`.
+- `manejador_json.py`: clase `ManejadorJSON`.
+- `generador_resumen_txt.py`: clase `GeneradorResumenTXT`.
+- `manejo_archivos.ipynb`: flujo de trabajo ejecutado.
+- `datos/`: archivos originales, modificados y resumen.
+
+## Fuentes
+
+- CSV: https://huggingface.co/datasets/KaungHtetCho/MT-myanmar-english/resolve/main/test_data.csv
+- JSON: https://huggingface.co/datasets/huggingface-projects/color-palettes-sd/resolve/main/data.json
+
+## Ejecución
+
+1. Abre `manejo_archivos.ipynb` desde la carpeta `AE2`.
+2. Selecciona un kernel de Python.
+3. Ejecuta las celdas en orden con **Run All**.
+
+El proyecto usa la biblioteca estándar de Python (`csv` y `json`).
+
+## Cambios realizados
+
+- CSV: se modificó el valor de la columna `English` en la primera fila.
+- JSON: se agregó `revisado: true` al primer registro.
+- Los archivos modificados se guardan con nombres nuevos para conservar los originales.
+- El notebook genera `datos/resumen.txt` con los resultados de la ejecución.
